@@ -9,7 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 
 ZAPI_INSTANCE_URL = "https://api.z-api.io/instances/3E1E0F007CC3E0BD1B7942BEA3E5411D/token/CDDA84AC78D7C028AB054E15/send-text"
-GEMINI_API_KEY = os.getenv("AIzaSyBb65yaxUjzQ8GeMR6-CLbRGzmumDXWBo0")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
